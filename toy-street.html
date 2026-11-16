@@ -87,6 +87,20 @@
   .btn.ghost{background:transparent;color:#fff;border:2px solid #fff;}
   .btn.red{background:var(--red);color:#fff;}
 
+  /* ---------- mobile: header must not cover the hero ---------- */
+  @media(max-width:820px){
+    header{position:static;}
+    .head-in{gap:10px;padding:10px 16px;}
+    .logo{font-size:17px;}
+    nav.main-nav{margin-left:0;gap:2px;}
+    nav.main-nav a{padding:5px 8px;font-size:12.5px;}
+    .hero{margin-top:0;min-height:0;}
+    .hero-in{padding:52px 0 56px;}
+    .hero h1{font-size:27px;line-height:1.5;}
+    .hero-flex{gap:22px;}
+    section{scroll-margin-top:16px;}
+  }
+
   /* ---------- sections ---------- */
   section{padding:72px 0;scroll-margin-top:84px;}
   section.alt{background:var(--panel);}
